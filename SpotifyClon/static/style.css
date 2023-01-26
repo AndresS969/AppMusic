@@ -15,3 +15,7 @@ body{
 .title-page {
     color: red;
 }
+
+.container-form form{
+    border-style: solid;
+}

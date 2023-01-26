@@ -19,7 +19,16 @@
         <li> Fesivales</li>
         <li> Sobre nosotros</li>
     </ul>
-    <h3>{{form}}</h3>
+    <br>
+    <br>
+    <div class="container-form">
+    <form action="{% url 'formulario' %}" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+    <input type="submit" value="Ingresar">
+    </div>
+    </form>
+    
         
   
 </body>
