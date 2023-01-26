@@ -9,4 +9,5 @@ urlpatterns = [
     path('mayorr/<int:edad>', views.calcular_mayoria_edad, name="mayor"),
     path('plantilla/', views.plantilla, name="plantilla"),
     path('hija/', views.herencia, name="hija"),
+    path('', include("AppMusic.urls")),
 ]
