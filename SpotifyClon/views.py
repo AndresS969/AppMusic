@@ -21,3 +21,7 @@ def plantilla(request):
     fecha = datetime.datetime.now
     lenguajes = ["python", "php", "java", "javascript", "ruby", "rust"]
     return render(request, "index.html", {"fecha": fecha, "lenguajes": lenguajes})
+
+#vista para la plantilla hija
+def herencia(request):
+    return render(request, "hija.html")

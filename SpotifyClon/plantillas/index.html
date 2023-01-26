@@ -7,8 +7,11 @@
     <title> AppMusic</title>
 </head>
 <body>
+    {% block content %}
     <h3><center> App de musica</center></h3>
+    <p> esto es un parrafo de la clase padre</p>
     <h3> Se creo un template!</h3>
+    {% endblock %}
     <h2> La fecha es: {{fecha}}</h2>
     <br>
     <br>
@@ -25,5 +28,6 @@
     {% else %}
     <h3> no existe</h3>
     {% endif %}
+    
 </body>
 </html>
