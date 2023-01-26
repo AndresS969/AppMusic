@@ -14,3 +14,7 @@ def calcular_mayoria_edad(request, edad: int) -> str:
         mensaje = "es menor de edad!"
 
     return HttpResponse(f"<h3>{mensaje}</h3>") 
+
+#inciando vistas con templates
+def plantilla(request):
+    return render(request, "index.html")

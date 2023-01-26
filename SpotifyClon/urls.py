@@ -7,4 +7,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('hola/', views.index, name="Hola"),
     path('mayorr/<int:edad>', views.calcular_mayoria_edad, name="mayor"),
+    path('plantilla/', views.plantilla, name="plantilla"),
 ]

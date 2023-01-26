@@ -54,7 +54,7 @@ ROOT_URLCONF = 'SpotifyClon.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["C:/Users/jose/Desktop/Django Project/SpotifyClon/plantillas"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
