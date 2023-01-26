@@ -1,5 +1,6 @@
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
+import datetime
 
 #inciando vistas
 def index(request):
@@ -17,4 +18,6 @@ def calcular_mayoria_edad(request, edad: int) -> str:
 
 #inciando vistas con templates
 def plantilla(request):
-    return render(request, "index.html")
+    fecha = datetime.datetime.now
+    lenguajes = ["python", "php", "java", "javascript", "ruby", "rust"]
+    return render(request, "index.html", {"fecha": fecha, "lenguajes": lenguajes})
