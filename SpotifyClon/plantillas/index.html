@@ -12,9 +12,18 @@
     <h2> La fecha es: {{fecha}}</h2>
     <br>
     <br>
+    <h3>{{lenguajes}}</h3>
+    {% for i in lenguajes %}
     <ul>
-        <li> {{lenguajes}}</li>
+        <li> {{i}} </li>
     </ul>
+    {% endfor %}
 
+    <h2> Condiciones por jinja</h2>
+    {% if "fewfew" in lenguajes %}
+    <h3> Lenguaje existe en en la lista</h3>
+    {% else %}
+    <h3> no existe</h3>
+    {% endif %}
 </body>
 </html>
