@@ -1,14 +1,23 @@
 from django.shortcuts import render
 from . forms import Formulario
+from . models import Registros
 
 
 # Create your views here.
 def app(request):
     return render(request, "app.html")
 
-#formulario
+#formulari
 def formulario(request):
     formulario = Formulario()
-    get_data = request.POST["correo"]
-    password = request.POST["contraseña"]
+    data_base = Registros()
+    if request.POST:
+        correo = Formulario()
+        Registros.objects.create(correo=request.POST["correo"]).save
+    
+        
+
     return render(request, "app.html", {"form": formulario})
+
+
+    
